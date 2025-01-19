@@ -1,0 +1,262 @@
+#
+# Be aware that even a small syntax error here can lead to failures in output.
+#
+
+sidebar:
+    position: left # position of the sidebar : left or right
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: True # set to False if you want education in main section instead of in sidebar
+
+    # Profile information
+    name: Rúben Ribeiro Garcia
+    tagline: Software Engineer
+    avatar: profile.jpg  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+
+    # Sidebar links
+    email: rubenribeirogarcia@gmail.com
+    phone: +351 913 556 480
+    timezone: Europe/Portugal # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+    citizenship: Portuguese
+    website: 
+    linkedin: rubenribeirogarcia
+    xing:
+    github: RubenRibGarcia
+    telegram: # add your nickname without '@' sign
+    gitlab:
+    bitbucket:
+    twitter:
+    stack-overflow: # Number/Username, e.g. 123456/alandoe
+    codewars:
+    goodreads: # Number-Username, e.g. 123456-alandoe
+    mastodon:  # Please include your full Mastodon link here.
+    hackerrank: # Please provide your HackerRank username.
+    leetcode: # Please provide your LeetCode username.
+    pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+
+    languages:
+      title: Languages
+      info:
+        - idiom: Portuguese
+          level: Native
+        - idiom: English
+          level: Professional
+
+career-profile:
+    title: Career Profile
+    summary: |
+      Summarise your career here lorem ipsum dolor sit amet, consectetuer
+      adipiscing elit. You can [download this free resume/CV template here]().
+      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
+      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+      Donec quam felis, ultricies nec, pellentesque eu.
+      Second paragraph if required.
+
+education:
+    title: Education
+    info:
+      - degree: MSc in Computer Science and Engineering
+        university: Instituto Superior de Engenharia de Lisbioa
+        time: Sep 2017 - Aug 2021
+      - degree: BSc in Computer Engineering
+        university: Faculdade de Ciências e Tecnologias - UNL
+        time: Sep 2012 - Jul 2016
+
+experiences:
+    title: Experiences
+    info:
+      - role: Engineering Manager
+        time: May 2023 - Jan 2025
+        company: Loggi, Portugal
+        details: |
+          - Guidance to the new team after merging between Payments and
+          Payout team in terms of scope, domain and ownership inside and
+          outside Finance Tribe;
+          - Extraction of Payout system from a monolithic infrastructure into a
+          microservice (Payout outside Monolith) according to the new
+          Engineering guidelines for better development experience and
+          autonomy for the team to develop and deploy with faster feedback
+          loops;
+          - Development of a Python library capable of reducing the complexity
+          and offer development simplicity when integrating with Kafka,
+          specifically building Kafka Consumers (KafkaX);
+          - Initiative to abstract and parameterize (Payout Parameterization) the
+          capabilities of Payout to be able to process and consolidate payments
+          for any service provider, while uniforming the system main
+          components;
+          - Initiative to migrate a well-known service provider payment process,
+          Driver MEI, to the Payout system, based on previous effort (Payout
+          Parameterization);
+          - Guidance the team together with the most senior member on the
+          newly decision of Engineering guidelines of the approach and
+          application of Hexagonal Architecture and a more Object-Oriented
+          programming in Python, SOLID principles and Clean Code;
+          - Initiative of a in-house Wallet (Ledger) to be used as a payment
+          method on Loggi user-interface application;
+          - Created the foundation to Loggi's engineers on how to build Python
+          libraries, with the example of KafkaX library;
+      - role: Staff Software Engineer
+        time: Nov 2022 - Apr 2023
+        company: Loggi, Portugal
+        details: |
+          - Initiative for independent application on Python Monorepo, to evolve
+          Python version. Implemented using CircleCI;
+          - Initiative for bootstrap projects based on templates to be able for
+          teams be faster when developing new microservices without the big
+          effort that is inherent to when starting a new project. Initially was using
+          a tool called Cookiecutter, but then Backstage.io plataform ermerged,
+          and the templates were adapted from the initial tool to the
+          Backstage.io way to create templates;
+          - Guidance to the new team scope (Payments Platform) by defining
+          what does, and doesn't, belong to the teams domain;
+          - Participating on the new Engineering technologies decision to move
+          from Django to FastAPI, with the scope to help the team understand
+          what is this new framework we will start using;
+          - Since newer projects are going to be developed using the web
+          framework, FastAPI, I introduced the team the topic about REST(ful)
+          API documentation standardisation (OpenAPI by Swagger) to help us
+          defined a contracts of the application (and how to include them on the
+          application itself);
+      - role: Senior Software Engineer
+        time: Nov 2021 - Nov 2022
+        company: Loggi, Portugal
+        details: |
+          - Introduction of a tool to update Python project dependencies on
+          Github uisng RenovateBot;
+          - Design, plan and develop a payment service for a product for a
+          person to pay for when scheduling a delivery to another person
+          (Checkout);
+          - Proof-of-concept to improve Zip fiscal files using AWS services, such
+          as AWS Lambda and AWS Step Functions;
+      - role: Software Engineer
+        time: Nov 2017 - Nov 2021
+        company: Premium Minds, Portugal
+        details: |
+          - Design and implement generic discounts for users to use on parking
+          sessions;
+          - Design, plan and implement the concept of charging session for user
+          wishing to charge their vehicles in parks (Coche Eletrico
+          Microservice);
+          - Design, plan and implement a notification service to notify at users
+          based on events, for example, "parking session session about to
+          send". (Notifications Microservice);
+          - Decentralise identity and access management from the monolith
+          component to be able to standardise authentication and authorisation
+          based on OpenID Connect protocol, using Keycloak;
+          - Continuous development on migration of monolithic architecture to a
+          microservice oriented architecture;
+          - Improving the visualisation and analysis of EOS metrics, by including
+          configuration and agents to collect metrics (JMX, StatsD, APM) for
+          those services into Datadog, for production environment. For other
+          environments, and to be able to test the implemented metrics, it was
+          created a infrastructure using InfluxDB, Telegraf and Grafana to keep
+          time-series data;
+          - Introducing a approach to make automatic deployments of our
+          services, based on CI/CD, especially based on the branches in which
+          the code was synced with the corresponding environment;
+          - Initiative to introduce and implement Bazel tool on Monolith
+          component to be able to achieve faster build time;
+          - Implementation of E2E testing based on user journeys, so that per
+          delivery, we run the set of implemented tests;
+          - Improve the way teams documents and communicates REST(ful)
+          APIs when we have projects that needs to integrate with them, using
+          the standard OpenAPI (by Swagger);
+          - Introduce a way for the teams documents asynchronous API, based
+          on Event-Driven Architecture, using AsyncAPI.
+      - role: .Net Developer
+        time: Aug 2017 - Oct 2017
+        company: Vortal - PrimeIT, Portugal
+      - role: Software Engineer
+        time: Mar 2016 - Jul 2017
+        company: Quidgest, Portugal
+
+certifications:
+      # title: Certifications
+      # list:
+      #   - name: CV Builder
+      #     start: 2020
+      #     end: 2021
+      #     organization: Microsoft
+      #     credentialid: 111-222
+      #     credentialurl: www.google.com
+      #     credentialname: Google
+      #     details: |
+      #       Details about cert. Lorem ipsum dolor sit amet, consectetur
+      #       adipiscing elit.
+      #       Nullam eget orci purus. Nullam ultrices neque nibh.
+      #       Aenean fermentum, felis vulputate suscipit accumsan,
+      #       sem enim bibendum augue, sed convallis arcu lacus at dui.
+      #       Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
+      #       Praesent felis nibh, eleifend id eleifend id, dictum id enim.
+      #       Praesent venenatis erat non augue suscipit consectetur.
+
+      #       Second paragraph. Sed eleifend enim ante, vitae efficitur purus
+      #       fringilla vel. Ut euismod, sem sed vulputate venenatis,
+      #       justo diam viverra velit, sed rhoncus leo leo eu justo.
+      #       Suspendisse placerat risus ante, sed porta nisi blandit at.
+
+projects:
+    # title: Projects
+    # intro: >
+    #   You can list your side projects in this
+    #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    # assignments:
+    #   - title: Velocity
+    #     link: "#hook"
+    #     tagline: "A responsive website template designed to help startups promote, market and sell their products."
+
+oss:
+    # title: OSS Contributions
+    # intro: >
+    #   You can list your open source software contributions in this
+    #   section. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    #   Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
+    # contributions:
+    #   - title: Tempo
+    #     link: "#"
+    #     tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
+
+publications:
+    # title: Publications
+    # intro: |
+    #   You can list your publications in this section. Lorem ipsum dolor sit
+    #   amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
+    #   bibendum fringilla a eu lectus.
+    # papers:
+    #   - title: The Art of Computer Programming
+    #     link: "#"
+    #     authors: Donald E. Knuth
+    #     conference: Addison-Wesley, 1968
+
+skills:
+    title: Skills &amp; Proficiency
+
+    toolset:
+      - name: Python3
+      - name: Django
+      - name: FastAPI
+      - name: OpenAPI
+      - name: REST
+      - name: gRPC
+      - name: Kubernetes
+      - name: Docker
+      - name: Grafana
+      - name: SigNoz
+      - name: OpenTelemetry
+      - name: AWS Lambda
+      - name: AWS Step Functions
+      - name: Debezium
+      - name: ArgoCD
+      - name: Github Actions
+      - name: CircleCI
+      - name: Terraform
+      - name: Ansible
+      - name: Bash
+      - name: CI/CD
+      - name: JUnit
+      - name: Java
+      - name: Apache Kafka
+      - name: PostgreSQL
+      - name: Typescript
+      - name: NestJS
+      - name: Podman
