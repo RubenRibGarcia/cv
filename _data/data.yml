@@ -3,7 +3,7 @@
 #
 
 sidebar:
-    position: left # position of the sidebar : left or right
+    position: right # position of the sidebar : left or right
     about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
     education: True # set to False if you want education in main section instead of in sidebar
 
@@ -42,15 +42,14 @@ sidebar:
           level: Professional
 
 career-profile:
-    title: Career Profile
+    title: summary
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
-
+      Passionate and pragmatic Software Engineer with 8 years of experience in architecting
+      and developing backend systems, backed by vision and strategy.
+      Curious on how things work following a hands-on approach
+      to learn new technologies, architecture, patterns and solutions.
+      Highly autonomous while also greate colaborator and communicator in any team size.
+      
 education:
     title: Education
     info:
@@ -68,99 +67,106 @@ experiences:
         time: May 2023 - Jan 2025
         company: Loggi, Portugal
         details: |
-          - Guidance to the new team after merging between Payments and
-          Payout team in terms of scope, domain and ownership inside and
-          outside Finance Tribe;
-          - Extraction of Payout system from a monolithic infrastructure into a
-          microservice (Payout outside Monolith) according to the new
-          Engineering guidelines for better development experience and
-          autonomy for the team to develop and deploy with faster feedback
-          loops;
-          - Development of a Python library capable of reducing the complexity
-          and offer development simplicity when integrating with Kafka,
-          specifically building Kafka Consumers (KafkaX);
-          - Initiative to abstract and parameterize (Payout Parameterization) the
-          capabilities of Payout to be able to process and consolidate payments
-          for any service provider, while uniforming the system main
-          components;
-          - Initiative to migrate a well-known service provider payment process,
-          Driver MEI, to the Payout system, based on previous effort (Payout
-          Parameterization);
-          - Guidance the team together with the most senior member on the
+          - Managed a team of 5 after merge between teams and defined the 
+          scope, domain and ownership inside and outside Finance Tribe;
+          - Design and planned the vision and strategy for our team domain to automate 
+          our manual processes, scalable solutions in terms of features and 
+          integration with accounting aspects that is needed to be declared in SAP system,
+          align with stategic planning of Finance tribe;
+          - Led the migration of Payout system from monolith application into a
+          microservice according to the new engineering guidelines for beter development
+          experience and autonomy for the teams;
+          - Designed and developed a Python library (KafkaX) capable of reducing the complexity
+          and offer development simplicity and velocity when integrationg with Kafka to support
+          our event-driven architecture, in terms of message consumption;
+          - Designed and planned the abstraction and parameterization of the capabilities for Payout
+          to be able to process and consolidate payments for any kind of service provider, with
+          the vision of uniforming all service provider payment processes;
+          - Supported the migration a well-known Driver MEI service provider payment process,
+          to the Payout system;
+          - Led the team together with the most senior member on the
           newly decision of Engineering guidelines of the approach and
           application of Hexagonal Architecture and a more Object-Oriented
           programming in Python, SOLID principles and Clean Code;
-          - Initiative of a in-house Wallet (Ledger) to be used as a payment
-          method on Loggi user-interface application;
-          - Created the foundation to Loggi's engineers on how to build Python
-          libraries, with the example of KafkaX library;
+          - Design, planned and implemented of a in-house Wallet (Ledger) to be used as a payment
+          method on Loggi user-interface applications, including the accounting aspects of this payments
+          made through this payment method;
+          - Led and set the foundation to Loggi's engineers on how to build Python
+          libraries using of KafkaX library as example;
+          - Supported the build of a event-driven architecture component named KRest to translate Kafka to REST,
+          having KafkaX as the backbone for the solution;
+          - Introduced Pair Programming practice to help the team improve it's velocity and completeness 
+          of Scrum Sprints and provide opportunity of greater growth when planned tasks have a higher necessity 
+          for more technical knownledge.
+          - Mentored team members in terms of end-to-end developments to improve their knownledge
+          on many parts of the system that we own or make usage of.
       - role: Staff Software Engineer
         time: Nov 2022 - Apr 2023
         company: Loggi, Portugal
         details: |
-          - Initiative for independent application on Python Monorepo, to evolve
-          Python version. Implemented using CircleCI;
-          - Initiative for bootstrap projects based on templates to be able for
+          - Implemented CI/CD workflow in Python Monorepo for application be 
+          independent when upgrading to newer Python version with CircleCI;
+          - Initiated a bootstrap projects based on templates to be able for
           teams be faster when developing new microservices without the big
-          effort that is inherent to when starting a new project. Initially was using
-          a tool called Cookiecutter, but then Backstage.io plataform ermerged,
-          and the templates were adapted from the initial tool to the
-          Backstage.io way to create templates;
-          - Guidance to the new team scope (Payments Platform) by defining
-          what does, and doesn't, belong to the teams domain;
-          - Participating on the new Engineering technologies decision to move
-          from Django to FastAPI, with the scope to help the team understand
-          what is this new framework we will start using;
-          - Since newer projects are going to be developed using the web
-          framework, FastAPI, I introduced the team the topic about REST(ful)
+          effort that is inherent to when starting a new project, 
+          using Cookiecutter as template engine backed with Backstage.io as 
+          the developer platform to generate projects based on that template;
+          - Technically led a team of 3 with a new team scope (Payments Platform)
+          involving financial pay-in and pay-out after merging between two teams 
+          (Payments and Payout);
+          - Participated and supported on new engineering decision to move
+          from Django to FastAPI, with the scope to help the team understand the usage of this
+          new framework;
+          - Introduced to the team the topic about REST(ful)
           API documentation standardisation (OpenAPI by Swagger) to help us
-          defined a contracts of the application (and how to include them on the
-          application itself);
+          define contracts of application that provided REST API, using FastAPI Framework;
+          - Mentored team members on the technologies we use as well as architectures 
+          and patterns to support their growth in technical proficiency.
       - role: Senior Software Engineer
         time: Nov 2021 - Nov 2022
         company: Loggi, Portugal
         details: |
-          - Introduction of a tool to update Python project dependencies on
-          Github uisng RenovateBot;
-          - Design, plan and develop a payment service for a product for a
-          person to pay for when scheduling a delivery to another person
-          (Checkout);
-          - Proof-of-concept to improve Zip fiscal files using AWS services, such
-          as AWS Lambda and AWS Step Functions;
+          - Introducted and implemented RenovateBot to update 
+          Python repository project dependencies through Github Apps;
+          - Designed, planned and developed the backend for a pre-payment solution (Checkout),
+          integrated with Adyen as main Payment Gateway to support a new product 
+          targeting normal users to schedule package delivery through our logistic mesh;
+          - Implemented visualisations, analysis and alarms for Checkout service from endpoint latencies to
+          chargeback events from Adyen using Grafana with ElasticSearch as datasource.
+          - Designed and implemented a proof-of-concept to improve Zip fiscal files using 
+          AWS services, such as AWS Lambda and AWS Step Functions;
       - role: Software Engineer
         time: Nov 2017 - Nov 2021
         company: Premium Minds, Portugal
         details: |
-          - Design and implement generic discounts for users to use on parking
+          - Designed and implemented generic discounts for users to use on parking
           sessions;
-          - Design, plan and implement the concept of charging session for user
+          - Designed, planned and implemented the concept of charging session for user
           wishing to charge their vehicles in parks (Coche Eletrico
           Microservice);
-          - Design, plan and implement a notification service to notify at users
+          - Designed, planned and implemented a notification service to notify at users
           based on events, for example, "parking session session about to
           send". (Notifications Microservice);
-          - Decentralise identity and access management from the monolith
+          - Decentralised identity and access management from the monolith
           component to be able to standardise authentication and authorisation
-          based on OpenID Connect protocol, using Keycloak;
+          based on OpenID Connect protocol, using Keycloak as solution;
           - Continuous development on migration of monolithic architecture to a
           microservice oriented architecture;
-          - Improving the visualisation and analysis of EOS metrics, by including
+          - Improved the visualisation and analysis of EOS metrics, by including
           configuration and agents to collect metrics (JMX, StatsD, APM) for
           those services into Datadog, for production environment. For other
           environments, and to be able to test the implemented metrics, it was
           created a infrastructure using InfluxDB, Telegraf and Grafana to keep
           time-series data;
-          - Introducing a approach to make automatic deployments of our
+          - Introduced a approach to make automatic deployments of our
           services, based on CI/CD, especially based on the branches in which
           the code was synced with the corresponding environment;
-          - Initiative to introduce and implement Bazel tool on Monolith
-          component to be able to achieve faster build time;
-          - Implementation of E2E testing based on user journeys, so that per
-          delivery, we run the set of implemented tests;
-          - Improve the way teams documents and communicates REST(ful)
-          APIs when we have projects that needs to integrate with them, using
-          the standard OpenAPI (by Swagger);
-          - Introduce a way for the teams documents asynchronous API, based
+          - Investigated ways to achieve faster build times of the monolith using Bazel tool;
+          - Implemented E2E testings based on user journeys, so that per
+          delivery, we run the test suite;
+          - Introduced and improved way for teams documents and communicates REST(ful)
+          APIs using OpenAPI specifications;
+          - Introduced a way for the teams documents asynchronous API, based
           on Event-Driven Architecture, using AsyncAPI.
       - role: .Net Developer
         time: Aug 2017 - Oct 2017
@@ -229,22 +235,31 @@ publications:
     #     conference: Addison-Wesley, 1968
 
 skills:
-    title: Skills &amp; Proficiency
+    title: Skills
 
     toolset:
       - name: Python3
+      - name: Poetry
+      - name: Astral uv
       - name: Django
       - name: FastAPI
+      - name: PyTest
+      - name: Tox
       - name: OpenAPI
-      - name: REST
+      - name: AsyncAPI
+      - name: RESTful APIs
       - name: gRPC
       - name: Kubernetes
       - name: Docker
       - name: Grafana
       - name: SigNoz
       - name: OpenTelemetry
+      - name: ElasticSearch
+      - name: Kibana
       - name: AWS Lambda
       - name: AWS Step Functions
+      - name: AWS EC2
+      - name: AWS Elasticache
       - name: Debezium
       - name: ArgoCD
       - name: Github Actions
@@ -260,3 +275,9 @@ skills:
       - name: Typescript
       - name: NestJS
       - name: Podman
+      - name: Event-based Architecture
+      - name: Microservices
+      - name: Git
+      - name: RabbitMQ
+      - name: Jenkins
+      - name: Domain Driven Design
