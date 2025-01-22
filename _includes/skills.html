@@ -8,9 +8,9 @@
     {{ skills.title }}
   </h2>
 
-  <div class="skillset">
+  <div class="skillset d-flex flex-row flex-wrap">
     {% for skill in skills.toolset %}
-    <div class="level-title">
+    <div class="level-title align-self-start">
       <span>{{ skill.name}}</span>
     </div>
     {% endfor %}
